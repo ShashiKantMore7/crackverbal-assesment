@@ -1,0 +1,41 @@
+.responsive-mobile-view {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.mobile-view-header {
+  width: 100%;
+  background-color: gray;
+  color: black;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.mobile-view-header p svg {
+  cursor: pointer;
+  color: black;
+  margin-top: 15px;
+}
+.mobile-nav {
+  height: 100vh;
+  width: 150px;
+  background-color: gray;
+  /* margin-top: 10px; */
+  position: absolute;
+}
+.mobile-nav ul li {
+  color: black;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+@media screen and (min-width: 900px) {
+  .responsive-mobile-view {
+    display: none;
+  }
+}
+@media screen and (max-width: 890px) {
+  .mobile-nav {
+    display: flex;
+  }
+}

@@ -1,0 +1,52 @@
+.footer {
+    height: auto;
+    margin: 0px;
+    background-color: #030749;
+    margin-top: 60px;
+}
+.footer-about-section {
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.footer-social-icons {
+    display: flex;
+    color: orange;
+    cursor: pointer;
+    gap: 10px;
+}
+.footer-social-icons p:hover{
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+.footer-social-icons p:hover svg{
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+.footer-item li {
+    color: white;
+    list-style-type: none;
+    padding-top: 10px;
+}
+li {
+    --border-color: white;
+    --border-color2: rgb(10, 207, 75);
+    --border-width: 2px;
+    --bottom-distance: 0px;
+    display: block;
+    background-image: linear-gradient(var(--border-color), var(--border-color2));
+    background-size: 0% var(--border-width);
+    background-repeat: no-repeat;
+    transition: background-size 0.5s;
+}
+.footer-item li{
+    background-position: 0 calc(100% - var(--bottom-distance));
+    color: white;
+    width: fit-content;
+    cursor: pointer;
+}
+.footer-item li:hover{
+    background-size: 100% var(--border-width);
+}
+.footer-service{
+    padding-bottom: 40px;
+}

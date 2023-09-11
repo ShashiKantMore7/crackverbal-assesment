@@ -1,0 +1,52 @@
+.service-section {
+  height: 900px;
+}
+
+#dark .service-section {
+  color: white;
+}
+@media (max-width: 1000px) {
+  .service-section {
+    height: auto;
+  }
+}
+
+.services {
+  margin-top: 150px;
+  color: black;
+  padding: 10px;
+  box-shadow: 15px 9px 9px -2px rgba(230, 224, 224, 0.86);
+  -webkit-box-shadow: 15px 9px 9px -2px rgba(230, 224, 224, 0.86);
+  -moz-box-shadow: 15px 9px 9px -2px rgba(230, 224, 224, 0.86);
+  cursor: pointer;
+}
+
+#dark .services {
+  background-color: #38004c;
+  color: white;
+
+  box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 0.42);
+  -webkit-box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 0.42);
+  -moz-box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 0.42);
+}
+.services:hover {
+  box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 0.42);
+  -webkit-box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 0.42);
+  -moz-box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 0.42);
+  transition-duration: 1s;
+  cursor: pointer;
+  border-left: 3px solid purple;
+}
+.services-info {
+  display: flex;
+}
+.service-name {
+  text-align: center;
+}
+.service-number p {
+  text-align: center;
+}
+
+.list-of-service p {
+  text-align: center;
+}

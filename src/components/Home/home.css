@@ -1,0 +1,67 @@
+.home {
+  height: 100vh;
+  /* color: black; */
+
+  position: relative;
+  /* margin-left: 5px; */
+}
+.home-title {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.home::before {
+  content: "";
+  background: url("../../image/about.jpg") no-repeat center/cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+.home-content {
+  height: 55%;
+  display: flex;
+  /* background-color: black; */
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  padding: 10px;
+}
+.view-details-home-button {
+  background-color: black;
+  color: white;
+  text-align: center;
+  width: 50%;
+  padding: 10px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.view-details-home-button:hover {
+  background-color: gray;
+  color: black;
+  transition-duration: 1s;
+}
+.theme-change {
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  right: 0;
+  margin-right: 10px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50px;
+  position: fixed;
+  top: 50%;
+  border-radius: 5px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+  .theme-change {
+    display: none;
+  }
+}

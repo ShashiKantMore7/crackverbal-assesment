@@ -1,0 +1,39 @@
+.navbar-main {
+  background-color: gray;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  top: 0;
+  text-align: center;
+  justify-content: right;
+  position: sticky;
+  z-index: 1;
+}
+/* navbar scroll changed color */
+.navbar-scroll-color {
+  background-color: black;
+}
+.navbar-main ul {
+  display: flex;
+  margin-right: 10%;
+}
+.navbar-main ul li {
+  list-style-type: none;
+  margin-right: 50px;
+  color: white;
+  padding-top: 7px;
+  cursor: pointer;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.navbar-main ul li:hover {
+  color: blue;
+}
+.nav-item .active {
+  color: blue;
+}
+@media screen and (max-width: 1000px) {
+  .navbar-main {
+    display: none;
+  }
+}
